@@ -1,0 +1,117 @@
+<html>
+    <head>
+        <link rel="stylesheet" type="text/css" href="style.css">
+        <link rel="stylesheet" type="text/css" href="bootstrap.css">
+        <link rel="stylesheet" type="text/css" href="all.css">
+    </head>
+    <body>
+        <div class="con cols-xs-12">
+            <div class="header container-fluid">
+               <table>
+                   <tr>
+                       <td><img class="img1"src="First.jpg" width="50px" height="50px"></img></td>
+                       <td><h1>Naveen Sharma</h1></td>
+                   </tr>
+               </table>
+               <ul>
+                   <li >About</li>
+                   <li class="cont">Contact</li>
+                   <li >Home</li>
+               </ul>
+               <div class="Contact">
+                   <p>+91-9999930895</p>
+                   <p>navsharma309@gmail.com</p>
+               </div>
+            </div>
+            <div class="mid">
+                <div class="co">
+                    <div class="box1">
+                    </div>
+                    <h1>Career Objective</h1>
+                    <p>To work in an IT organization for exposure to current technologies in computer science field.</p>
+                </div> 
+                <div class="qual">
+                    <div class="box2">
+                    </div>
+                    <h1>Educational Qualification</h1>
+                    <p>Bachelors of Engineering in Computer Science from VIER college.</p>
+                    <p>HSC Education from URMI School.</p>
+                    <p>SSC Education from URMI School</p>
+                </div>
+                <div class="plang">
+                    <div class="box4">
+                    </div>
+                    <h1>Programming languages</h1>
+                    <div class="insidepl">
+                        <p>C/C++</p>
+                        <div class="line1"></div>
+                        <p>Java</p>
+                        <div class="line2"></div>
+                        <p>HTML/CSS</p>
+                        <div class="line3"></div>
+                        <p>PHP</p>
+                        <div class="line4"></div>
+                    </div>
+                </div>
+                <div class="hobby">
+                    <div class="box3">
+                    </div>
+                    <h1>Hobbies</h1>
+                    <p>Reading </p>
+                    <p>Listening Songs</p>
+                </div>
+            </div>
+        </div>
+        <footer >
+            <table cellpadding="10px">
+                <tr>
+                    <td><i class="fas fa-map-marker-alt"></i></td>
+                    <td>230-Adinath society,Vadodara.</td>
+                </tr>
+                <tr>
+                    <td><i class="fas fa-phone-alt"></i></td>
+                    <td>+91-9998230895</td>
+                </tr>
+                <td><i class="fas fa-envelope"></i></td>
+                <td>navsharma309@gmail.com</td>
+            </table>
+            <div class="follow">
+            </div>
+            <p>&copy Naveen Sharma 2020</p>
+        </footer>
+    </body>
+    <script type="text/javascript" src="jquery.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function(){
+            $(window).scroll(function(){
+                var scroll = $(window).scrollTop();
+                if(scroll>90)
+                {
+                    $(".header").css("background","rgba(0,0,0,1");
+                }
+                else
+                {
+                    $(".header").css("background","lightskyblue");   
+                }
+            })
+            $(".box1").hover(function(){
+                $(".co p").slideToggle();
+            })
+            $(".box2").hover(function(){
+                $(".qual p").slideToggle();
+            })
+            $(".box3").hover(function(){
+                $(".hobby p").slideToggle();
+            })
+            $(".box4").hover(function(){
+                $(".insidepl, .line1, .line2, .line3, .line4").slideToggle();
+            })
+            $(".cont").mouseenter(function(){
+                $(".contact").slideDown();
+            })
+            $(".cont").mouseleave(function(){
+                $(".contact").slideUp();
+            })
+        })
+    </script>
+</html>
